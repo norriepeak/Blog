@@ -6,7 +6,10 @@
     </a>
 
     <nav class="site-nav">
-      {% include nav-items.html paths = site.pages %}
+      <a class="page-link" href="{{ '/notes/' | relative_url }}">Notes</a>
+      <a class="page-link" href="{{ '/films/' | relative_url }}">Films</a>
+      <a class="page-link" href="{{ '/photos/' | relative_url }}">Photos</a>
+      <a class="page-link" href="{{ '/about/' | relative_url }}">About</a>
     </nav>
 
   </div>
