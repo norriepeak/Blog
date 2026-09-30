@@ -1,1 +1,11 @@
 
+title: "My Little Internet"
+description: "Notes, films, photos and thoughts."
+lang: zh-CN
+
+theme: minima
+
+author:
+  name: ""
+
+show_excerpts: true
