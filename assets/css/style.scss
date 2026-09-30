@@ -3,6 +3,8 @@
 
 @import "minima";
 
+/* ===== 基础 ===== */
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                "Noto Sans SC", "Noto Sans", sans-serif;
@@ -16,7 +18,8 @@ body {
   margin: 0 auto;
 }
 
-/* Header */
+
+/* ===== 顶部 ===== */
 
 .site-header {
   border-top: none;
@@ -26,34 +29,39 @@ body {
 }
 
 .site-header .wrapper {
-  display: block;
+  display: block !important;
 }
 
 .site-title {
-  display: block;
-  float: none;
-  width: 100%;
-  margin-bottom: 14px;
+  float: none !important;
+  display: block !important;
+  width: 100% !important;
+  margin: 0 0 16px 0 !important;
   font-weight: 600;
   letter-spacing: 0.04em;
 }
 
 .site-nav {
-  display: block;
-  float: none;
-  width: 100%;
+  float: none !important;
+  display: block !important;
+  clear: both !important;
+  width: 100% !important;
+  margin: 0 !important;
+  position: static !important;
 }
 
 .site-nav .trigger {
-  display: block;
+  display: block !important;
 }
 
 .site-nav .page-link {
-  margin-left: 0;
-  margin-right: 28px;
+  display: inline-block !important;
+  margin-left: 0 !important;
+  margin-right: 28px !important;
 }
 
-/* Page */
+
+/* ===== 页面 ===== */
 
 .page-content {
   padding: 70px 0;
@@ -69,7 +77,8 @@ h2 {
   font-weight: 500;
 }
 
-/* Links */
+
+/* ===== 链接 ===== */
 
 a {
   color: #333;
@@ -82,7 +91,8 @@ a:hover {
   border-bottom-color: #000;
 }
 
-/* Images */
+
+/* ===== 图片 ===== */
 
 img {
   max-width: 100%;
@@ -90,14 +100,16 @@ img {
   border-radius: 4px;
 }
 
-/* Footer */
+
+/* ===== 页脚 ===== */
 
 .site-footer {
   border-top: 1px solid #ddd;
   background: #f7f6f2;
 }
 
-/* Home */
+
+/* ===== 首页 ===== */
 
 .home-intro {
   padding: 80px 0 55px;
@@ -146,7 +158,8 @@ img {
   font-weight: 500;
 }
 
-/* Mobile */
+
+/* ===== 手机 ===== */
 
 @media screen and (max-width: 600px) {
 
@@ -170,32 +183,5 @@ img {
     grid-template-columns: 1fr;
     gap: 5px;
   }
-/* Force header into two rows */
 
-@media screen and (min-width: 601px) {
-
-  .site-header .wrapper {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-  }
-
-  .site-header .site-title {
-    float: none !important;
-    display: block !important;
-    width: 100% !important;
-  }
-
-  .site-header .site-nav {
-    float: none !important;
-    display: block !important;
-    width: 100% !important;
-    margin-top: 10px !important;
-  }
-
-  .site-header .site-nav .trigger {
-    display: block !important;
-  }
-
-}
 }
