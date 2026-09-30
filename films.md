@@ -6,6 +6,8 @@ permalink: /films/
 
 我看过的电影，以及留在豆瓣上的一些记录。
 
+电影数据数量：{{ site.data.films.size }}
+
 {% if site.data.films %}
 {% for film in site.data.films %}
 
