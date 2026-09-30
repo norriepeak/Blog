@@ -5,8 +5,6 @@ date: 2026-09-30 15:00:00 +0800
 categories: notes
 ---
 
-# Hello
-
 这是我的第一篇博客。
 
 This is my first post.
@@ -19,5 +17,3 @@ This is my first post.
 - 旅行
 - 工作
 - 一些没有地方放的东西
-
-![一张照片](https://images.unsplash.com/photo-1500530855697-b586d89ba3ee)
