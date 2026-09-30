@@ -183,5 +183,71 @@ img {
     grid-template-columns: 1fr;
     gap: 5px;
   }
+.film-card {
 
+  display: flex;
+  gap: 35px;
+
+  padding: 35px 0;
+
+  border-bottom: 1px solid #ddd;
+
+}
+
+
+.film-poster img {
+
+  width: 160px;
+  height: 230px;
+
+  object-fit: cover;
+
+  border-radius: 4px;
+
+}
+
+
+.film-info h2 {
+
+  margin-top: 0;
+
+  font-size: 1.5rem;
+
+}
+
+
+.film-rating {
+
+  color: #b8860b;
+
+  line-height: 1.8;
+
+}
+
+
+.film-note {
+
+  max-width: 600px;
+
+  line-height: 1.8;
+
+}
+
+
+@media screen and (max-width:600px){
+
+  .film-card{
+
+    flex-direction: column;
+
+  }
+
+  .film-poster img{
+
+    width:140px;
+    height:auto;
+
+  }
+
+}
 }
