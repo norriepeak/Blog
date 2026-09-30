@@ -1,5 +1,5 @@
 ---
-layout: null
+layout: default
 ---
 
 <div class="home-intro">
