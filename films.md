@@ -4,30 +4,40 @@ title: Films
 permalink: /films/
 ---
 
-# Films
+我看过的电影，以及留在豆瓣上的一些记录。
 
-我看过的电影，以及一些留下来的东西。
+{% if site.data.films %}
+{% for film in site.data.films %}
 
----
+<div class="film-entry">
 
-## 2026
+  {% if film.poster %}
+  <img src="{{ film.poster }}" alt="{{ film.title }}">
+  {% endif %}
 
-### 《这里先放电影名》
+  <div class="film-info">
 
-**★★★★★**  
-2026 · 导演名字
+    <h2>
+      <a href="{{ film.url }}" target="_blank">
+        {{ film.title }}
+      </a>
+    </h2>
 
-> 这里写几句自己的感受。
+    {% if film.rating %}
+    <p>{{ film.rating }}</p>
+    {% endif %}
 
-[豆瓣](https://movie.douban.com/)
+    {% if film.note %}
+    <p>{{ film.note }}</p>
+    {% endif %}
 
----
+  </div>
 
-### 《另一部电影》
+</div>
 
-**★★★★☆**  
-2026 · 导演名字
+{% endfor %}
+{% else %}
 
-> 短评。
+还没有电影记录。
 
-[豆瓣](https://movie.douban.com/)
+{% endif %}
