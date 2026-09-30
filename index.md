@@ -4,10 +4,10 @@ layout: default
 
 <div class="home-intro">
 
-<h1>norrie</h1>
+<h1>Norrie Peak</h1>
 
 <p class="subtitle">
-notes · films · photos
+notes · films · photos · life
 </p>
 
 <p class="description">
@@ -16,10 +16,6 @@ Notes from somewhere on the internet.
 </p>
 
 </div>
-
-<hr>
-
-<h2>Notes</h2>
 
 <div class="post-list-custom">
 
@@ -33,13 +29,9 @@ Notes from somewhere on the internet.
 
 <div class="post-content">
 
-<h3>
+<h2>
 <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-</h3>
-
-<p>
-{{ post.excerpt }}
-</p>
+</h2>
 
 </div>
 
