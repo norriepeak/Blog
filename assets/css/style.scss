@@ -170,5 +170,32 @@ img {
     grid-template-columns: 1fr;
     gap: 5px;
   }
+/* Force header into two rows */
 
+@media screen and (min-width: 601px) {
+
+  .site-header .wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .site-header .site-title {
+    float: none !important;
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .site-header .site-nav {
+    float: none !important;
+    display: block !important;
+    width: 100% !important;
+    margin-top: 10px !important;
+  }
+
+  .site-header .site-nav .trigger {
+    display: block !important;
+  }
+
+}
 }
