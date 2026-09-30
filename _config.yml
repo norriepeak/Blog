@@ -3,6 +3,8 @@ description: "notes · films · photos · Life"
 
 theme: minima
 
+author: ""
+
 header_pages:
   - notes.md
   - films.md
