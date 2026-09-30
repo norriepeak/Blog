@@ -1,3 +1,10 @@
 title: "Norrie Peak"
 description: "notes · films · photos · Life"
+
 theme: minima
+
+header_pages:
+  - notes.md
+  - films.md
+  - photos.md
+  - about.md
