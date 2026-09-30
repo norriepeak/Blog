@@ -1,0 +1,17 @@
+name: Sync Douban Movies
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 2 * * *"
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run Douban RSS
+        run: python scripts/douban_movies.py
