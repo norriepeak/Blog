@@ -182,4 +182,29 @@ img {
   margin-left: 0;
   margin-right: 25px;
 }
+  .site-header .wrapper {
+  display: block !important;
+}
+
+.site-title {
+  display: block !important;
+  float: none !important;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.site-nav {
+  display: block !important;
+  float: none !important;
+  width: 100%;
+}
+
+.site-nav .trigger {
+  display: block !important;
+}
+
+.site-nav .page-link {
+  margin-left: 0 !important;
+  margin-right: 25px !important;
+}
 }
