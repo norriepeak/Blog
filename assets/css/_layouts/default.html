@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    {% if page.title %}
+      {{ page.title }} · {{ site.title }}
+    {% else %}
+      {{ site.title }}
+    {% endif %}
+  </title>
+
+  <link rel="stylesheet"
+        href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+
+<header class="custom-header">
+
+  <div class="custom-header-inner">
+
+    <a class="site-name" href="{{ '/' | relative_url }}">
+      Norrie Peak
+    </a>
+
+    <nav class="site-nav">
+      <a href="{{ '/' | relative_url }}">Notes</a>
+      <a href="{{ '/films/' | relative_url }}">Films</a>
+      <a href="{{ '/photos/' | relative_url }}">Photos</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+    </nav>
+
+  </div>
+
+</header>
+
+<main class="page-content">
+
+  <div class="wrapper">
+
+    {{ content }}
+
+  </div>
+
+</main>
+
+</body>
+</html>
