@@ -1,0 +1,13 @@
+<header class="site-header">
+  <div class="wrapper">
+
+    <a class="site-title" rel="author" href="{{ '/' | relative_url }}">
+      {{ site.title | escape }}
+    </a>
+
+    <nav class="site-nav">
+      {% include nav-items.html paths = site.pages %}
+    </nav>
+
+  </div>
+</header>
