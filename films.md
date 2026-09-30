@@ -7,6 +7,9 @@ permalink: /films/
 我看过的电影，以及留在豆瓣上的一些记录。
 
 <div class="film-list">
+<p>TEST123</p>
+
+<p>数量：{{ site.data.films.size }}</p>
 
 {% for film in site.data.films %}
 
