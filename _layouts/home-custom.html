@@ -1,0 +1,30 @@
+
+---
+layout: default
+---
+
+<section class="home-intro">
+  <h1>Norrie Peak</h1>
+  <p class="subtitle">notes · films · photos · Life</p>
+  <p class="description">
+    一些关于生活、电影、摄影和世界的记录。<br>
+    Notes from somewhere on the internet.
+  </p>
+</section>
+
+<section class="home-recent">
+  <h2>Recent notes</h2>
+
+  <ul class="post-list">
+    {% for post in site.posts limit:5 %}
+      <li class="post-item">
+        <span class="post-date">
+          {{ post.date | date: "%b %d, %Y" }}
+        </span>
+        <a href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
